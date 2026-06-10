@@ -7,7 +7,7 @@ It handles rooms, customers, bookings, check‑in/check‑out, and billing with 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)]()
 
-**📅 Current Release:** 2026-06-10
+**📅 Current Release:** v1.0.0 (2026‑06‑10, Build 3)
 
 **🛠️ Author:** Aminiow
 
