@@ -3,6 +3,7 @@ name: Build executables
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -31,27 +32,24 @@ jobs:
       - name: Build SeedNexusData
         run: pyinstaller SeedNexusData.spec --distpath dist
 
-      # --- Rename and package per OS ---
       - name: Rename executables (Windows)
         if: runner.os == 'Windows'
         run: |
-          ren dist\NexusHotel.exe NexusHotel-${{ github.ref_name }}.exe
-          ren dist\SeedNexusData.exe SeedNexusData-${{ github.ref_name }}.exe
+          ren dist\NexusHotel.exe "NexusHotel-${{ github.ref_name }}-${{ runner.arch }}.exe"
+          ren dist\SeedNexusData.exe "SeedNexusData-${{ github.ref_name }}-${{ runner.arch }}.exe"
 
       - name: Rename executables (Linux)
         if: runner.os == 'Linux'
         run: |
-          mv dist/NexusHotel dist/NexusHotel-${{ github.ref_name }}
-          mv dist/SeedNexusData dist/SeedNexusData-${{ github.ref_name }}
+          mv dist/NexusHotel "NexusHotel-${{ github.ref_name }}-${{ runner.arch }}"
+          mv dist/SeedNexusData "SeedNexusData-${{ github.ref_name }}-${{ runner.arch }}"
 
       - name: Package and rename .app (macOS)
         if: runner.os == 'macOS'
         run: |
-          # Create zip files for each .app
           cd dist
-          zip -r NexusHotel-${{ github.ref_name }}.app.zip NexusHotel.app
-          zip -r SeedNexusData-${{ github.ref_name }}.app.zip SeedNexusData.app
-          # Remove the original .app folders so they aren't uploaded
+          zip -r "NexusHotel-${{ github.ref_name }}-${{ runner.arch }}.app.zip" NexusHotel.app
+          zip -r "SeedNexusData-${{ github.ref_name }}-${{ runner.arch }}.app.zip" SeedNexusData.app
           rm -rf NexusHotel.app SeedNexusData.app
           cd ..
 
