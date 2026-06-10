@@ -79,7 +79,9 @@ The database file `nexus_hotel.db` is created automatically in the project folde
 
 **Status flow**
 Rooms: `vacant` → `occupied` / `maintenance`
+
 Bookings: `reserved` → `in_house` → `departed` (or `voided`)
+
 Billing: `pending` → `settled`
 
 ---
