@@ -31,6 +31,24 @@ jobs:
       - name: Build SeedNexusData
         run: pyinstaller SeedNexusData.spec --distpath dist
 
+      - name: Rename files with tag (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          ren dist\NexusHotel.exe NexusHotel-${{ github.ref_name }}.exe
+          ren dist\SeedNexusData.exe SeedNexusData-${{ github.ref_name }}.exe
+
+      - name: Rename files with tag (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          mv dist/NexusHotel dist/NexusHotel-${{ github.ref_name }}
+          mv dist/SeedNexusData dist/SeedNexusData-${{ github.ref_name }}
+
+      - name: Rename files with tag (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          mv dist/NexusHotel.app dist/NexusHotel-${{ github.ref_name }}.app
+          mv dist/SeedNexusData.app dist/SeedNexusData-${{ github.ref_name }}.app
+
       - name: Upload to release
         uses: softprops/action-gh-release@v2
         with:
