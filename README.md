@@ -8,7 +8,9 @@ It handles rooms, customers, bookings, check‑in/check‑out, and billing with 
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)]()
 
 **📅 Current Release:** 2026-06-10
+
 **🛠️ Author:** Aminiow
+
 **🔗 Repository:** [Nexus-Hotel-Management-System (Nexus HMS)](https://github.com/Aminiow/NexusHotelManagementSystem)
 
 ---
