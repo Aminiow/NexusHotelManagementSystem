@@ -3,14 +3,14 @@ import sys
 import tkinter as tk
 from tkinter import ttk
 from db import DatabaseManager
-from release import RELEASE_DATE, APP_NAME
+from release import APP_NAME, BUILD_ID
 from ui import NexusTheme, HelpPopup, RoomsFrame, CustomersFrame, BookingFrame, CheckoutFrame, BillingFrame
 
 
 class HotelApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title(f"{APP_NAME} – {RELEASE_DATE}")
+        self.title(f"{APP_NAME} ({BUILD_ID})")
         self.geometry("1200x750")
         self.configure(bg=NexusTheme.BG)
         self.set_icon()
