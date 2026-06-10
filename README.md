@@ -41,7 +41,53 @@ It handles rooms, customers, bookings, check‑in/check‑out, and billing with 
 
 ## 📸 Screenshots
 
-> *(e.g., the main dashboard, booking screen).* (**NOT AVAILABLE**)
+<details>
+  <summary>🏨 Room Management</summary>
+  <br>
+  <img width="600" alt="Rooms" src="https://github.com/user-attachments/assets/aa359cb8-97b8-4df4-a7ad-e12fcc75fd66" />
+</details>
+
+<details>
+  <summary>👥 Customer Management</summary>
+  <br>
+  <img width="600" alt="Customers" src="https://github.com/user-attachments/assets/3c0c013d-f95e-4869-a553-8bc486fb8a87" />
+</details>
+
+<details>
+  <summary>📅 Booking Management</summary>
+  <br>
+  <img width="600" alt="Booking" src="https://github.com/user-attachments/assets/b7881cfa-3c84-4049-9bd7-c6a1c67d0c75" />
+</details>
+
+<details>
+  <summary>🚪 Checkout</summary>
+  <br>
+  <img width="600" alt="Checkout" src="https://github.com/user-attachments/assets/c97bdd93-751a-4510-aa3d-e20498f631ed" />
+</details>
+
+<details>
+  <summary>💰 Billing & Payments</summary>
+  <br>
+  <img width="600" alt="Billing" src="https://github.com/user-attachments/assets/72d7a02f-6d9a-48a0-b1b6-a0c09295bca8" />
+</details>
+
+<details>
+  <summary>❓ Help / User Guide</summary>
+  <br>
+  <img width="600" alt="Help" src="https://github.com/user-attachments/assets/60aed000-bce5-41ae-902a-168fd1b827a6" />
+</details>
+
+<details>
+  <summary>🧪 Seed Data – Error (duplicate attempt)</summary>
+  <br>
+  <img width="395" alt="Seed error" src="https://github.com/user-attachments/assets/f4efd9fd-bc56-4204-9ba4-554b490353c4" />
+</details>
+
+<details>
+  <summary>✅ Seed Data – Success</summary>
+  <br>
+  <img width="403" alt="Seed success" src="https://github.com/user-attachments/assets/afd4ecc9-148d-4b44-a71f-783760eed810" />
+</details>
 
 ---
 
